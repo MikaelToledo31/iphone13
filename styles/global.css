@@ -1,0 +1,42 @@
+body{
+    background: #e8e6e7;
+}
+
+header{
+    padding: 20px 70px;
+    background: #1d1d1f;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation .logo{
+    width: 50px;
+}
+
+.navigation ul li{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.navigation ul li a{
+    color: #888;
+    font-weight: 600;
+    padding: 4px;
+    transition: all 0.5s ease-in-out;
+}
+
+.navigation ul li a:hover{
+    color: #ffff;
+    border-bottom: 1px solid #ffff;
+}
+
+.navigation .check{
+    color: #fff;
+    border-bottom: 1px solid #ffff;
+}
+

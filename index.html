@@ -13,17 +13,61 @@
         <nav class="navigation">
             <a href="#"><img src="/public/assets/logo.png" alt="Logo" class="logo"></a>
             <ul>
-                <li>
-                    <a href="#">Mac</a>
-                    <a href="#">Ipad</a>
-                    <a href="#" class="check">Iphone</a>
-                    <a href="#">watch</a>
-                    <a href="#">AirPods</a>
-                    <a href="#">Só na Apple</a>
-                    <a href="#">Suporte</a>
-                </li>
+                <li><a href="#">Mac</a></li>
+                <li><a href="#">Ipad</a></li>   
+                <li><a href="#" class="check">Iphone</a></li>    
+                <li><a href="#">watch</a></li>    
+                <li><a href="#">AirPods</a></li>    
+                <li><a href="#">Só na Apple</a></li>    
+                <li><a href="#">Suporte</a></li>    
             </ul>
         </nav>
     </header>
+
+    <main>
+        <section>
+            <div class="circle"></div>
+            <div class="main-text">
+                <img src="/public/assets/iphone13.png" alt="Iphone 13">
+                <h3>Seu novo superpoder.</h3>
+                <p>Chip com velocidade impressionante. Um aumento notável na duração da bateria. E novos recursos de foto e vídeo. <br>No Iphone 13 você faz coisas que nunca pôde. E ele ainda vem em dois tamanhos</p>
+                <h6>A partir de R$ 6.599</h6>
+                <a href="#" class="btn">Comprar</a>
+                <div class="text">
+                    <h5>Escolha sua cor favorita:</h5>
+                </div>
+                <div class="content">
+                    <span id="green" onclick="imgSlide('/public/assets/green.png'); circleChange('#445c42')"></span>
+                    <span id="pink" onclick="imgSlide('/public/assets/pink.png'); circleChange('#ffc9cf')""></span>
+                    <span id="blue" onclick="imgSlide('/public/assets/blue.png'); circleChange('#0b839e')""></span>
+                    <span id="black" onclick="imgSlide('/public/assets/black.png'); circleChange('#092732')""></span>
+                    <span id="white" onclick="imgSlide('/public/assets/white.png'); circleChange('#e0dbd7')""></span>
+                    <span id="red" onclick="imgSlide('/public/assets/red.png'); circleChange('#cf4f68')""></span>
+                </div>
+            </div>
+            <div class="main-img">
+                <img src="/public/assets/green.png" alt="Iphone verde" id="phone">
+            </div>
+        </section>
+    </main>
+
+    <script type="text/javascript">
+        /**
+         * Altera a imagem do iPhone
+         * @param {string} e - caminho da imagem
+         */
+        function imgSlide(e) {
+            // seleciona a imagem do iPhone
+            const phone = document.querySelector('#phone');
+            // altera a imagem do iPhone
+            phone.src = e;
+        }
+
+
+        function circleChange(color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
 </body>
 </html>
